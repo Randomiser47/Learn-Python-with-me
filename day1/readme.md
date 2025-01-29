@@ -33,7 +33,7 @@ Generate unique band names by combining your city and pet's name!
 *Please enter the name of your pet:*  
 `Ringo`
 
-🎸 *Your band name could be:* **Liverpool Ringo**
+*Your band name could be:* **Liverpool Ringo**
 
 ### Run the Script
 python day1.py
