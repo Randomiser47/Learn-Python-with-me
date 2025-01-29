@@ -1,11 +1,30 @@
-# Learn-Python
-# 🐍 100 Days of Python Mastery
+# 👩💻 My 100-Day Python Learning Journey 
 
-A structured 100-day coding journey to transform beginners into confident Python developers. Daily lessons, exercises, and projects covering fundamentals, web development, data science, automation, and more!
-
+[![Days Progress](https://img.shields.io/badge/Day-1%2F100-orange)](https://github.com/your-username/learn-python)
 [![Python 3.12](https://img.shields.io/badge/Python-3.12-blue?logo=python)](https://www.python.org/)
-[![Days Progress](https://img.shields.io/badge/Days-1%2F100-orange)](https://github.com/your-username/learn-python)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
+
+**A public log of my progress through [Dr. Angela Yu's 100 Days of Code Bootcamp](https://www.udemy.com/course/100-days-of-code/).**  
+Join me as I tackle daily Python challenges, document my solutions, and learn from mistakes. All code is my own implementation unless noted.
+
+---
+
+## 📌 **Disclaimer & Attribution**
+> This repository documents my personal journey through Dr. Angela Yu's excellent [**100 Days of Code: The Complete Python Pro Bootcamp**](https://www.udemy.com/course/100-days-of-code/).  
+> - **Project ideas/briefs**: From the course curriculum  
+> - **Code implementations**: My original solutions 
+> - **Notes/Explanations**: My personal understanding  
+> *Not affiliated with/instructors of the original course.*
+
+---
+
+## 🚀 **Features**
+- **Daily Progress Tracking**: Commit history shows my consistency
+- **Struggle Documentation**: Notes on bugs, errors, and fixes
+- **Alternative Solutions**: Different approaches to course projects
+- **Community Support**: Compare implementations or suggest improvements
+
+---
 
 ## 📌 **100-Day Roadmap Overview**
 
@@ -36,24 +55,22 @@ A structured 100-day coding journey to transform beginners into confident Python
 ## 🚀 **Key Features**
 - **Daily Code Challenges**: 100+ exercises with solutions
 - **Milestone Projects**: 15+ substantial projects (Days 30, 50, 75, 100)
-- **Progress Tracking**: Daily checkboxes and achievement badges
 - **Cheat Sheets**: 20+ quick-reference guides (OOP, APIs, Pandas, etc.)
-- **Community Support**: Discussion templates for each week
 
 ## 📂 **Repository Structure**
 /learn-python
-├── day-01-10/
-│ ├── day-01-variables/
-│ │ ├── lesson.md
+├── day-01
+│ ├── lesson.md
 │ │ └── solution.py
-├── projects/
-│ ├── milestone-1/
-│ ├── milestone-2/
+├── day-02/
+│ ├── lesson.md
+│ │ └── solution.py
+├── day-03.....
 └── resources/
 ├── python-cheatsheets/
-└── career-guides/
 
-## 💻 **Getting Started **
+
+## 💻 **Learn along with me**
 git clone https://github.com/Randomiser47/learn-python.git
 ## Start with Day 1:
 cd learn-python/days/day-01
