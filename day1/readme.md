@@ -25,12 +25,12 @@ Generate unique band names by combining your city and pet's name!
 3. Combines both inputs to create band name
 
 Example Output:
-Welcome to the Band Name Generatorrrrrrr!!!!
+'Welcome to the Band Name Generatorrrrrrr!!!!
 Please enter the city you are from:
 Liverpool
 Please enter the name of your pet:
 Ringo
-Your band name could be Liverpool Ringo
+Your band name could be Liverpool Ringo'
 
 ### Run the Script
 python day1.py
