@@ -53,20 +53,11 @@ Output: Each person should pay: $33.60
 
 ### Navigate to directory:
 ```bash
-cd days/day-02
+cd day2
 ```
 
 ### Run any project:
 ```bash
-python tip_calculator.py
+python3 file_name.py
 ```
 
-## 💡 Coding Challenges
-
-### BMI Calculator:
-- Add obesity classification (`Underweight` / `Normal` / `Overweight`).
-- Handle imperial units (`pounds` / `inches`).
-
-### Tip Calculator:
-- Prevent `33.6 → 33.6 → 33.60` formatting issues.
-- Add input validation for negative numbers.
