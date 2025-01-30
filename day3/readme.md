@@ -27,3 +27,17 @@ Master conditional logic with practical projects ranging from BMI classification
 ```python
 Height: 1.75m | Weight: 95kg
 Output: "Your BMI is 31.0 You are Obese"
+```
+### 2. Pizza Order System
+
+```python
+Size: L | Pepperoni: Y | Cheese: Y
+Output: "Your bill is $29"
+```
+### 3. Treasure Island Game with ASCII Art
+```python
+Path: right → wait → red
+Output: "You found the Treasure!" 
+```
+### 4.
+
