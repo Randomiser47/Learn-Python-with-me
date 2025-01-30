@@ -39,5 +39,9 @@ Output: "Your bill is $29"
 Path: right → wait → red
 Output: "You found the Treasure!" 
 ```
-### 4.
+### 4. Love Calculator
+```python
+Names: "Brad Pitt" & "Angelina Jolie"
+Output: "The love percentage is 53%"
+```
 
