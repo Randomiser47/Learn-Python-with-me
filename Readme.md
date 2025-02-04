@@ -16,16 +16,6 @@ Join me as I tackle daily Python challenges, document my solutions, and learn fr
 > - **Notes/Explanations**: My personal understanding  
 > *Not affiliated with/instructors of the original course.*
 
----
-
-## 🚀 **Features**
-- **Daily Progress Tracking**: Commit history shows my consistency
-- **Struggle Documentation**: Notes on bugs, errors, and fixes
-- **Alternative Solutions**: Different approaches to course projects
-- **Community Support**: Compare implementations or suggest improvements
-
----
-
 ## 📌 **100-Day Roadmap Overview**
 
 ### **Phase 1: Core Python (Days 1-30)**
