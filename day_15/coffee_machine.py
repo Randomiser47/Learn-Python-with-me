@@ -37,17 +37,26 @@ resources = {
 
 ORDER = True
 
-def coin_box(coffee_type,pennies,nickles,dimes,quarters):
-    pennies = 0.01 * pennies
-    nickles = 0.05 * nickles
-    dimes = 0.10 * dimes
-    quarters = 0.25 * quarters
-    all_cash = pennies + nickles + dimes + quarters
-    if coffee_type in ['espresso','latte','cappuccino']:
-        a
-   
+def coin_box(coffee_type,coin,menu):
+    profit = 0
+    all_cash = coin
+    if all_cash >= 3.00:
+        if coffee_type in ['espresso','latte','cappuccino']:
+            all_cash = all_cash - menu[coffee_type]['cost']
+            profit += menu[coffee_type]['cost']
+    return all_cash,profit
 
-
+def check_money(coffee_type,coin,menu):
+    check_coin = coin
+    if check_coin < 1.5:
+        False
+    elif check_coin <2.50 and coffee_type == 'latte':
+        return False
+    elif check_coin <=2.50 and coffee_type == 'cappuccino':
+        return False
+    else:
+        return True
+            
 def resource_mgmt(coffee_type,materials,menu):
     if coffee_type in ['espresso','latte','cappuccino']:
         water_cal = materials['water'] - menu[coffee_type]['ingredients']['water']
@@ -55,14 +64,51 @@ def resource_mgmt(coffee_type,materials,menu):
         milk_cal = materials['milk'] - menu[coffee_type]['ingredients']['milk']
     leftover_resource = {'water':water_cal,'coffee':coffee_cal,'milk':milk_cal}
     return leftover_resource
+
+def check_resource(coffee_type,materials,menu):
+    if coffee_type in ['espresso','latte','cappuccino'] and materials['water']>menu[coffee_type]['ingredients']['water']and materials['coffee']>menu[coffee_type]['ingredients']['coffee']:
+        return True
+    if materials['water']< menu[coffee_type]['ingredients']['water']:
+        print("Water Resource has delpleted cannot make your drink")
+        return False
+    if materials['coffee']< menu[coffee_type]['ingredients']['coffee']:
+        print("Coffee Resource has delpleted cannot make your drink")
+        return False
+    if materials['milk']< menu[coffee_type]['ingredients']['milk']:
+        print("Milk Resource has delpleted cannot make your drink")
+        return False
+    return True
+
+total_profit = 0
+while ORDER == True:
+    report = True
+    while report == True:
+        what_want = input("What would you like?\n 1.Espresso \n 2.Latte \n 3.Cappuccino\n").lower()
+        if what_want == "report":
+            print(resources)
+            print(f"the money is ${round(total_profit,2)} ")
+            report = True
+        else:
+            report = False
+    if what_want =="off":
+            break
+    enough_resource = check_resource(coffee_type=what_want,materials=resources,menu=MENU)
+    if not enough_resource:
+        break
+    coin_pennies = float(input("How many pennies?: ")) * 0.01
+    coin_nickles = float(input("How many nickles?: ")) * 0.05
+    coin_dimes = float(input("How many dimes?: ")) *0.10
+    coin_quarters = float(input("How many quarters?: ")) *0.25
+    total_coin = coin_pennies + coin_nickles + coin_dimes + coin_quarters
+    coin_valid = check_money(coffee_type=what_want,coin=total_coin,menu=MENU)
+    if not coin_valid:
+        print("Sorry You don't have enough money for the order, Money Refunded")
+        break
+    return_coin,profit_coin = coin_box(coffee_type=what_want,coin=total_coin,menu=MENU)
+    total_profit+=profit_coin
     
-
-# while ORDER == True:
-what_want = input("What would you like?\n 1.Espresso \n 2.Latte \n 3.Cappuccino\n").lower()
-#     coin_pennies = float(input("How many pennies?: "))
-#     coin_nickles = float(input("How many nickles?: "))
-#     coin_dimes = float(input("How many dimes?: "))
-#     coin_quarters = float(input("How many quarters?: "))
-#     coinless = coin_box(coffee_type=what_want,pennies=coin_pennies,nickles=coin_nickles,dimes=coin_dimes,quarters=coin_quarters)
-
-resources = resource_mgmt(coffee_type=what_want,materials=resources,menu=MENU)
+    resources = resource_mgmt(coffee_type=what_want,materials=resources,menu=MENU)
+    print(f"Here is your {what_want}\nand here is your change ${round(return_coin,2)} ENJOY!!")
+        
+   
+    
