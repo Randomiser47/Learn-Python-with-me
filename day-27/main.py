@@ -23,7 +23,7 @@ button.pack()
 
 
 
-#entry component 
+#entry
 input = Entry(width=10)
 input.pack()
 
