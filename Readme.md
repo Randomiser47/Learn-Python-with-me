@@ -1,6 +1,6 @@
 # 👩💻 My 100-Day Python Learning Journey 
 
-[![Days Progress](https://img.shields.io/badge/Day-23%2F100-orange)](https://github.com/your-username/learn-python)
+[![Days Progress](https://img.shields.io/badge/Day-28%2F100-orange)](https://github.com/your-username/learn-python)
 [![Python 3.12](https://img.shields.io/badge/Python-3.12-blue?logo=python)](https://www.python.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
 
