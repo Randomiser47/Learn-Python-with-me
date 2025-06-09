@@ -1,0 +1,16 @@
+img{
+    width: 50rem;
+    margin-left: 25%;
+    margin-top: 10em;
+}
+body{
+    background-color: #CF8D59;
+}
+h1{
+    margin-left: 45%;
+    font-family: 'Libre Baskerville';
+}
+p{
+    margin-left: 40%;
+    font-family: 'Libre Baskerville';
+}
